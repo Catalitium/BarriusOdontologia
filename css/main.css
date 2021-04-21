@@ -191,6 +191,7 @@ ul li {
 	transition: all 0.3s;
 	background: #03a9f4;
 	margin-left: 250px;
+	word-spacing: normal;
 }
 .nav-toggle:before, .nav-toggle:after {
 	border-radius: 50%;
