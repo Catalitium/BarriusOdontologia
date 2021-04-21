@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Lato', sans-serif;
 }
 h1 {
-	font-size: 65px;
+	font-size: 5px;
 	color: #383838;
 }
 h2 {
@@ -126,13 +126,12 @@ ul li {
 }
 #header .logo {
 	float: left;
-	font-size: 28px;
+	font-size: 20px;
 	font-weight: bolder;
 	color: #383838;
 	text-decoration:none;
-	text-transform:uppercase;
 	letter-spacing: 0px;
-	margin-top: -10px;
+	margin-top: 10px;
 }
 #header .logo i {
     color: #03a9f4;
@@ -142,9 +141,7 @@ ul li {
 	background: #ffffff;
 	box-shadow: 2px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
-#header.fixed a {
-	/* color: #000; */
-}
+
 #header.fixed .header-content {
 	border-bottom: 0;
 	padding: 24px 0 20px;
@@ -153,6 +150,7 @@ ul li {
 	top: 13px;
 	color: #000;
 	background: #07aaf4;
+	
 }
 .navigation.open {
 	opacity: 0.9;
@@ -172,7 +170,7 @@ ul li {
 	color: #353535;
 	font-size: 14px;
 	font-weight: 700;
-	margin-left: 40px;
+	margin-left: 1px;
 	text-transform: uppercase;
 }
 .navigation a:hover, .navigation a.active {
@@ -182,10 +180,8 @@ ul li {
 	display: none;
 	height: 44px;
 	overflow: hidden;
-	position: fixed;
-	right: 5%;
+	position: relative;
 	text-indent: 100%;
-	top: 12px;
 	white-space: nowrap;
 	width: 44px;
 	z-index: 99999;
@@ -194,6 +190,7 @@ ul li {
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	background: #03a9f4;
+	margin-left: 250px;
 }
 .nav-toggle:before, .nav-toggle:after {
 	border-radius: 50%;
@@ -317,41 +314,44 @@ ul li {
 	transform: translateY(0) rotate(-45deg);
 }
 .site-info{
-	color: #383838;
-	background: #ffffff;
-	border-radius: 20px;
-	margin-top: 34px;
-	padding: 15px 0;
+	
+color: #383838;
+	
+background: #ffffff;
+	
+border-radius: 20px;
+	
+margin-top: 34px;
+	
+padding: 15px 0;
 }
 .site-info a{
-	color: #03a9f4;
+	color: #25D366;
 }
 .phoneInfo{
-	display: inline-block;
-}
-.timeInfo{
 	
+display: inline-block;
 }
+
 .phoneInfo h6, .timeInfo h6{
     display: inline-block;
     text-transform: uppercase;
     margin-right: 12px;
 }
-.timeInfo em{}
+
 /* ------------------------------------------------------------------------------
 	Banner
 -------------------------------------------------------------------------------*/
 .slider-banner h3{
 	color: #03a9f4;
 	font-size: 44px;
-	text-transform: uppercase;
+
 	font-weight: bolder;
 }
 .slider-banner p{
     color: #383838;
     font-size: 18px;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .banner {
 	position:relative;
@@ -398,13 +398,6 @@ Common Styles
 text-align: center;	
 padding-bottom: 30px;
 }
-.section-header h2{
-	
-}
-.section-header p{
-	
-}
-
 
 /* ------------------------------------------------------------------------------
 	 Serives
@@ -424,7 +417,7 @@ padding-bottom: 30px;
 	text-align: left;
 }
 .services .icon {
-	color: #ffffff;
+	color: #03a9f4;
 	font-size: 38px;
 	padding-left: 15px;
 	float: left;
@@ -532,7 +525,7 @@ address {
     color: #ffffff !important;
 }
 .gallery {
-    margin-bottom: :0px;
+    margin-bottom: 0px;
     padding-bottom: 0px;
 }
 /* ---------------------------------------------------------------------------
@@ -744,6 +737,7 @@ ul.list-default li {
 }
 .person-content {
 	margin-top: 20px;
+	
 }
 .person h4 {
 	font-weight: 400;
@@ -938,3 +932,29 @@ ul.list-default li {
 	font-size: 11px;
 	margin: 0 2px;
 }
+
+.lineaAzulDivididora {
+		border: 1.5px solid #00aeda;
+		border-radius: 5px;
+	  }
+
+@media only screen and (max-width: 640px) {
+			.nav-toggle {
+				display: none;
+				height: 44px;
+				overflow: hidden;
+				position: relative;
+				text-indent: 100%;
+				white-space: nowrap;
+				width: 44px;
+				z-index: 99999;
+				-moz-transition: all 0.3s;
+				-o-transition: all 0.3s;
+				-webkit-transition: all 0.3s;
+				transition: all 0.3s;
+				background: #03a9f4;
+				margin-left: 275px;
+		}
+	  }
+
+	  
