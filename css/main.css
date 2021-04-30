@@ -123,6 +123,7 @@ ul li {
 	-o-transition: padding 0.3s;
 	-webkit-transition: padding 0.3s;
 	transition: padding 0.3s;
+	
 }
 #header .logo {
 	float: left;
@@ -727,9 +728,15 @@ ul.list-default li {
 /* ------------------------------------------------------------------------------
 	 Teams
 -------------------------------------------------------------------------------*/
+.containerPersons {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .person {
 	max-width: 270px;
-	text-align: center;
 }
 .person img {
 	width: 150px;
@@ -957,5 +964,4 @@ ul.list-default li {
 				margin-left: 275px;
 		}
 	  }
-
 	  
