@@ -41,7 +41,7 @@
   <!-- banner text --> 
 <div class="banner" id="banner"> 
 	<div class="slider-banner">
-            <div data-lazy-background="images/slides/1.jpg"> 
+            <div data-lazy-background="images/slides/3.jpg"> 
                 <h3 data-pos="['68%', '-40%', '60%', '12%']" data-duration="700" data-effect="move">
                     Clinica Dental
                 </h3> <br>
@@ -50,7 +50,7 @@
                 </p> 
             </div>
 
-            <div data-lazy-background="images/slides/2.jpg"> 
+            <div data-lazy-background="images/slides/02.jpg"> 
               <h3 data-pos="['68%', '-40%', '60%', '12%']" data-duration="700" data-effect="move">
                   Somos...
               </h3> <br>
@@ -292,7 +292,7 @@
                    
                   </div></div>
 
-          <div class="person"> <img src="images/team-2.jpg" alt="" class="img-responsive">
+          <div class="person"> <img src="images/team-1.png" alt="" class="img-responsive">
                     <div class="person-content">
                       <h4>Dr. Fernando Barriuso</h4>
                       <h5 class="role">Odontologo Especialista</h5>
@@ -453,6 +453,22 @@
 				progressColor: "#03A9F4"
 			});
 		});
+
+    var doc = new jsPDF();
+var specialElementHandlers = {
+    '#editor': function (element, renderer) {
+        return true;
+    }
+};
+
+$('#cmd').click(function () {
+    doc.fromHTML($('#content').html(), 15, 15, {
+        'width': 170,
+            'elementHandlers': specialElementHandlers
+    });
+    doc.save('sample-file.pdf');
+});
+
 	</script> 
 </body>
 </html>
